@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "faunadb": "^2.11.1",
+    "node-emoji": "^1.10.0",
     "node-telegram-bot-api": "^0.40.0"
   }
 }
