@@ -16,6 +16,6 @@
     "node-telegram-bot-api": "^0.40.0"
   },
   "engines": {
-    "node": "10.x"
+    "node": "8.11.1"
   }
 }
