@@ -14,5 +14,8 @@
     "faunadb": "^2.11.1",
     "node-emoji": "^1.10.0",
     "node-telegram-bot-api": "^0.40.0"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
