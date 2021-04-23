@@ -24,7 +24,7 @@ const bot = new TelegramBot( TOKEN, { polling: true } )
 bot.onText(/\/about/, (msg) => {
    let about = 
 `
-ToDoGram 0.0.1 - BETA
+ToDoGram 0.0.1 - BETA - @to_dogram_bot
 https://github.com/paiva-thiago/todogram_bot
 
 Thiago Paiva
