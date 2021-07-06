@@ -86,9 +86,13 @@ http://www.thiagopaiva.com/
  bot.onText(/\/list/, async (msg) => {
    let items = await fauna.getNotOkByAuthor(msg.from.id)
    console.log(items)
-   await bot.sendMessage(msg.chat.id, 'TODO:')
-   for(let i of items){      
-     await bot.sendMessage(msg.chat.id, i.name + (i.done?emoji.white_check_mark:emoji.x))
+   if(items.length==0){
+      await bot.sendMessage(msg.chat.id, 'Lista vazia! Nada a fazer! \nEmpty List! Nothing to do!')
+   }else{
+      await bot.sendMessage(msg.chat.id, 'TODO:')
+      for(let i of items){      
+         await bot.sendMessage(msg.chat.id, i.name + (i.done?emoji.white_check_mark:emoji.x))
+      }
    }
    console.log(msg)
 })
